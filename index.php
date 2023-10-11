@@ -1,33 +1,21 @@
 <?php
 /*
-  associative array - an array with key value pair.
+  Multidimensional array - Array inside array.
 */ 
 
-##Associative Array:
-
-$employees =array(
-    "singh"=>"Software Engineer",
-    "khalid"=>"Web Developer",
-    "ayush"=>"Data Scientist"
+##Multidimensional Array:
+$students=array(
+    array("name"=>"Singh","class"=>"BSc"),
+    array("name"=>"Naman","class"=>"BCA")
 );
 // echo "<pre>";
-// print_r($employees);
+// print_r($students);
 
-// $keys=array_keys($employees);
-// echo "<pre>";
-// print_r($keys);
-// exit;
-
-// $values=array_values($employees);
-// echo "<pre>";
-// print_r($values);
-// exit;
-
-// $employees=array_flip($employees);
-// $employees=array_reverse($employees);
-?> 
-<?php
-foreach($employees as $key=>$value){
-    ?>
-    <p><b><?php echo ucwords($key).": "  ?></b><?php echo $value ?></p>
-<?php } ?>
+foreach($students as $key => $value){
+    // echo "<pre>";
+    // print_r($value);
+    foreach($value as $k=> $v){
+        echo "<b>".ucwords($k)."<b>:". $v."<br>";
+    }
+}
+?>
