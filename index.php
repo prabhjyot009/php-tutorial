@@ -1,23 +1,29 @@
 <?php
-## Logical Operator 
-## if(condition 1 && condition 2)
-
-//&&=True, if both conditions are true
-//||=Trie, if at least one condition is true
-//!=True if false,false if true
-
-$temp=30;
-$cloudy=true;
-if($temp >0 && $temp<30){
-    echo "Temp is good";
+##Switch Case
+$day = "Monday";
+switch($day){
+    case "Monday":
+        echo "Today is Monday";
+        break;
+    case "Tuesday":
+        echo "Today is Tuesday";
+        break;
+    case "Wednesday":
+        echo "Today is Wednesday";
+        break;
+    case "Thursday":
+        echo "Today is Thursday";
+        break;
+    case "Friday":
+        echo "Today is Friday";
+        break;
+    case "Saturday":
+        echo "Today is Saturday";
+        break;
+    case "Sunday":
+        echo "Today is Sunday";
+        break;
+    default:
+        echo "Invalid Day";
 }
-else{
-    echo "Temp is not good";
-}
-echo"<br>";
-if($cloudy){
-    echo "it is cloudy outside";
-}
-else
-echo "it's sunny"
 ?>
