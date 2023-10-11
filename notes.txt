@@ -52,3 +52,9 @@ var_dump($marks);
 echo "<br>";
 var_dump($isMarried);
 ?>
+
+//Rules for naming variables:
+1. Variable name should start with a letter or underscore.
+2. Variable name cannot start with a number.
+3. Variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
+4. Variable names are case-sensitive ($age and $AGE are two different variables).
