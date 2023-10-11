@@ -1,29 +1,21 @@
 <?php
-##Switch Case
-$day = "Monday";
-switch($day){
-    case "Monday":
-        echo "Today is Monday";
-        break;
-    case "Tuesday":
-        echo "Today is Tuesday";
-        break;
-    case "Wednesday":
-        echo "Today is Wednesday";
-        break;
-    case "Thursday":
-        echo "Today is Thursday";
-        break;
-    case "Friday":
-        echo "Today is Friday";
-        break;
-    case "Saturday":
-        echo "Today is Saturday";
-        break;
-    case "Sunday":
-        echo "Today is Sunday";
-        break;
-    default:
-        echo "Invalid Day";
+## for loop
+for($i=0;$i<5;$i++){
+    echo "Hello $i <br>";
+}
+echo "<br>";
+echo "<br>";
+for($i=10;$i>0;$i--){
+    echo "$i <br>";
+}
+echo "<br>";
+echo "<br>";
+for($i=1;$i<=10;$i+=2){
+    echo "$i <br>";
+}
+echo "<br>";
+echo "<br>";
+for($i=2;$i<=20;$i+=2){
+    echo $i." <br>";
 }
 ?>
