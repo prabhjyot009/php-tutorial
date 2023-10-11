@@ -1,94 +1,46 @@
 <?php
-//operators in php:
 /*
-   ## Airthmatic operators
-   + - * / ** %
+   //Pre defined functions:
+   ## string functions
+   ## number functions
+   ## math functions
 */
 
-$a=10;
-$b=2;
-$c=$a+$b;
-$d=$a-$b;
-$e=$a*$b;
-$f=$a/$b;
-$g=$a%$b; 
-$h=$a+$b;
-$i=$a**$b;
-// echo $a . "+" . $b . "=" . $c;
-echo "$c<br>";
-echo "$d<br>";
-echo "$e<br>";
-echo "$f<br>";
-echo "$g<br>";
-echo "$h<br>";
-echo "$i<br><br>";
+//String fucntion
 
-/*
-   ##Increment/Decrement operators:
-   ++ --
- */
-$x=10;
- echo $x."<br>";
- $x++;//post increment
- echo $x."<br><br>";
+$name="Singh brar";
+echo strlen($name)."<br>";
+echo str_replace("S","B",$name)."<br>";
+echo str_replace("s","b",$name)."<br>";//it is not case sensitive
+//case sensitive:
+echo str_ireplace("s","b",$name)."<br>";
+echo ucwords($name)."<br>";
+echo strtoupper($name)."<br>";
+echo strtolower($name)."<br>";
+echo strrev($name)."<br><br>";
 
- $X=10;
- echo $X."<br>";
- $X--;//post decrement
- echo $X."<br><br>";
+//Number functions
+$num=30;
+var_dump(is_int($num));
+echo "<br>";
+var_dump(is_float($num));
+echo "<br>";
+$num2=30.5;
+var_dump(is_numeric($num2));
+echo "<br>";
+var_dump(is_string($num));
+echo "<br>";
+var_dump(is_bool($num));
 
- $y=10;
- echo $y."<br>";
- ++$y;//pre increment
- echo $y."<br><br>";
-
- $Y=10;
- echo $Y."<br>";
- --$Y;//pre decrement
- echo $Y."<br><br>";
-
- $A=10;
- $B=$A++;
- $C=$A;
- echo $A."<br>";
- echo $B."<br>";
- echo $C."<br><br>";
-
- $D=10;
- $E=++$D;
- $F=$D;
- echo $D."<br>";
- echo $E."<br>";
- echo $F."<br><br>";
-
- $A=10;
- $B=$A--;
- $C=$A;
- echo $A."<br>";
- echo $B."<br>";
- echo $C."<br><br>";
-
- $D=10;
- $E=--$D;
- $F=$D;
- echo $D."<br>";
- echo $E."<br>";
- echo $F."<br><br>";
-
-/*
-   ##Operators Precedence
-   ()
-   **
-   * / +
-   * + -
-*/
-
-$total= 4/2*3+(5+10)**2;
-// 4/2*3+15**2;
-// 4/2*3+225;
-// 2*3+225;
-// 6+225;
-// 231;
-echo $total;
-
+//Math functions
+echo "<br><br>";
+echo pi()."<br>";
+echo min(0,150,30,20,-8,-200)."<br>";
+echo max(0,150,30,20,-8,-200)."<br>";
+echo abs(-6.7)."<br>";
+echo sqrt(64)."<br>";
+echo round(0.60)."<br>";
+echo round(0.49)."<br>";
+echo rand()."<br>";
+echo rand(10,100)."<br>";
 ?>
