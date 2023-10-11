@@ -1,3 +1,28 @@
+1. Comments in php:
+
+//Single line comment
+# single line comment
+/*double line comment*/
+
+2. php in html:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP tutorial</title>
+</head>
+<body>
+    <h1>
+        <?php echo "Hello"?>
+    </h1>
+    <?php echo "sir"?>
+</body>
+</html>
+
+3.Variables and datatypes:
+
 <?php
 /*
   ## Variable:
