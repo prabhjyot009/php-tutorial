@@ -1,21 +1,44 @@
 <?php
 /*
-  Multidimensional array - Array inside array.
-*/ 
+  user defined function
+  function - is a block of statements that
+  can be used in a program
+  1: function call
+  2: function defination
+*/
 
-##Multidimensional Array:
-$students=array(
-    array("name"=>"Singh","class"=>"BSc"),
-    array("name"=>"Naman","class"=>"BCA")
-);
-// echo "<pre>";
-// print_r($students);
+//function define:
+// function myfun(){
+//     echo "Welcome from myFun<br>";
+// }
 
-foreach($students as $key => $value){
-    // echo "<pre>";
-    // print_r($value);
-    foreach($value as $k=> $v){
-        echo "<b>".ucwords($k)."<b>:". $v."<br>";
-    }
+// //function call:
+// myfun();
+
+// function sum(){
+//     echo 2+5;
+// }
+// sum();
+
+// $a=5;
+// $b=10;
+// sum($a,$b);
+// function sum($num1,$num2){
+//     echo $num1+$num2."<br>";
+// }
+// $a=10;
+// $b=13;
+// sum($a,$b);
+
+$a=5;
+$b=10;
+$total=sum($a,$b);
+echo $total."<br>";
+function sum($num1,$num2){
+    return $num1+$num2."<br>";
 }
+$a=10;
+$b=13;
+$total=sum($a,$b);
+echo $total."<br>";
 ?>
