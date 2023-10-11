@@ -35,4 +35,4 @@ foreach($reverse_fruits as $fruit){
     echo $fruit."<br>";
 }
 echo count($fruits);
-?>
+?> 
