@@ -1,43 +1,23 @@
 <?php
+## Logical Operator 
+## if(condition 1 && condition 2)
 
-# if conditional statement
+//&&=True, if both conditions are true
+//||=Trie, if at least one condition is true
+//!=True if false,false if true
 
-## Relational Operators
-/*
-    ==	Equal
-    ===	Identical
-    !=	Not Equal
-    <>	Not Equal
-    !==	Not Identical
-    >	Greater Than
-    <	Less Than
-    >=	Greater Than or Equal To
-    <=	Less Than or Equal To
-*/
-
-$age=20;
-if($age>=21 && $age<25){
-    echo "You can drink in the US";
-}
-else if($age>=18){
-    echo "You can drink in India";
+$temp=30;
+$cloudy=true;
+if($temp >0 && $temp<30){
+    echo "Temp is good";
 }
 else{
-    echo "You can't drink";
+    echo "Temp is not good";
 }
-echo "<br><br>";
-$hours=50; //8days*5hours
-$rate=10;
-$weekpay=0;
-
-if($hours==0){
-    $weekpay=0;
+echo"<br>";
+if($cloudy){
+    echo "it is cloudy outside";
 }
-else if($hours <=40 ){
-    $weekpay=$hours*$rate;
-}
-else{
-    $weekpay=(40*$rate)+($hours-40)*($rate*1.5);
-}
-echo "Your weekly payment is :". $weekpay;
+else
+echo "it's sunny"
 ?>
