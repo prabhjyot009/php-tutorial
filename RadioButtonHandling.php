@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="index.php" method="post">
+    <form action="RadioButtonHandling.php" method="post">
         <label for="">Select any course:</label><br>
         <input type="radio" value="BCA" name="course"> BCA <br>
         <input type="radio" value="MCA" name="course"> MCA <br>
