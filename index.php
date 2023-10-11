@@ -1,38 +1,33 @@
 <?php
 /*
-  array - variable which can hold more than one value at a time
+  associative array - an array with key value pair.
 */ 
 
-##indexed array:
+##Associative Array:
 
-$fruits=array("apple","orange","banana","mango");
-// array_push($fruits,"coconut","d");
+$employees =array(
+    "singh"=>"Software Engineer",
+    "khalid"=>"Web Developer",
+    "ayush"=>"Data Scientist"
+);
+// echo "<pre>";
+// print_r($employees);
 
-// echo $fruits[0]."<br>";
-// echo $fruits[1];
-// echo "<br><br>";
-// foreach($fruits as $fruit){
-//     echo $fruit."<br>";
-// }
-// echo "<br><br>";
+// $keys=array_keys($employees);
+// echo "<pre>";
+// print_r($keys);
+// exit;
 
-// foreach($fruits as $fruit){
-//     echo $fruit[0]."<br>";
-// }
+// $values=array_values($employees);
+// echo "<pre>";
+// print_r($values);
+// exit;
 
-// echo "<br><br>";
-
-// $fruits[0]="coconut";
-// foreach($fruits as $f){
-//     echo $f."<br>";
-// }
-
-// echo "<br><br>";
-
-$reverse_fruits=array_reverse($fruits);
-
-foreach($reverse_fruits as $fruit){
-    echo $fruit."<br>";
-}
-echo count($fruits);
+// $employees=array_flip($employees);
+// $employees=array_reverse($employees);
 ?> 
+<?php
+foreach($employees as $key=>$value){
+    ?>
+    <p><b><?php echo ucwords($key).": "  ?></b><?php echo $value ?></p>
+<?php } ?>
