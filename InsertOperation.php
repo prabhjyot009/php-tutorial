@@ -21,14 +21,23 @@ include("config/database.php");
 // }
 
 //select query:
-$sql="select id, username, created_at from users where id =1";
-$result=$conn->query($sql);
-// echo "<pre>";
-// print_r($result);
-if($result->num_rows>0){
-  while($row= $result->fetch_assoc()){
-    echo "<pre>";
-    print_r($row); 
-  }
+// $sql="select id, username, created_at from users where id =1";
+// $result=$conn->query($sql);
+// // echo "<pre>";
+// // print_r($result);
+// if($result->num_rows>0){
+//   while($row= $result->fetch_assoc()){
+//     echo "<pre>";
+//     print_r($row); 
+//   }
+// }
+#update query:
+$sql="update users set username='Singh' where id =4";
+$res=$conn->query($sql);
+if($res){
+  echo "updated successfully";
+}
+else{
+  echo "Not update";
 }
 ?>
