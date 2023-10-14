@@ -32,12 +32,21 @@ include("config/database.php");
 //   }
 // }
 #update query:
-$sql="update users set username='Singh' where id =4";
+// $sql="update users set username='Singh' where id =4";
+// $res=$conn->query($sql);
+// if($res){
+//   echo "updated successfully";
+// }
+// else{
+//   echo "Not update";
+// }
+#Delete Query:
+$sql="delete from users where id =2";
 $res=$conn->query($sql);
 if($res){
-  echo "updated successfully";
+  echo "deleted successfully";
 }
 else{
-  echo "Not update";
+  echo "Not deleted";
 }
 ?>
