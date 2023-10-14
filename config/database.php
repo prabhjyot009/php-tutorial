@@ -15,7 +15,7 @@ $conn = @mysqli_connect(
 
 //Check connection:
 if($conn){
-    echo "Connection Successful";
+    echo "";
 }
 else{
     echo "Connection UnSuccessful error: ".mysqli_connect_error();
