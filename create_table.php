@@ -1,4 +1,4 @@
- <?php
+<?php
 $servername = "localhost:3306";
 $username = "root";
 $password = "geu";
@@ -27,4 +27,4 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-?> 
+?>  
