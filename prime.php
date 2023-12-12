@@ -1,5 +1,5 @@
 <?php
-$num=9  ;
+$num=$_GET['prime'];
 $flag=1;
 for($i=2;$i<$num/2;$i++){
     if($num%$i==0){
